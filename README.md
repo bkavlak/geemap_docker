@@ -48,7 +48,9 @@ And, see you have it in your local machine:
 
 Run the container by typing on bash or PowerShell:
 
-```docker run -it --name 'CONTAINER NAME' -p 8888:8888 -p 6006:6006 -v 'VOLUME DIRECTORY':/geemap/data bkavlak/geemap:latest bash```
+```
+docker run -it --name 'CONTAINER NAME' -p 8888:8888 -p 6006:6006 -v 'VOLUME DIRECTORY':/geemap/data bkavlak/geemap:latest bash
+```
 
 You should change text inside '___' as your preference (Don't include apostrophes ' ')
 
