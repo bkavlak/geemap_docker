@@ -34,8 +34,8 @@ RUN /usr/bin/python3 -m pip install --upgrade pip
 RUN pip3 --no-cache-dir install --upgrade setuptools && \
     pip3 --no-cache-dir install wheel && \
     pip3 --no-cache-dir install \
-		jupyter \
-		jupyterlab \
+	jupyter \
+	jupyterlab \
         numpy \
         scipy \
         Pillow \
@@ -44,15 +44,15 @@ RUN pip3 --no-cache-dir install --upgrade setuptools && \
         scikit-image \
         scikit-learn \
         sentinelhub --upgrade \
-		sentinelsat \
-		folium \
+	sentinelsat \
+	folium \
         fiona \
         shapely \
         geopandas \
         rasterio \
         tifffile \
-		branca==0.3.1 \
-		geemap
+	branca==0.3.1 \
+	geemap
 
 RUN mkdir geemap
 
