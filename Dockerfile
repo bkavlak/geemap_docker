@@ -34,8 +34,8 @@ RUN /usr/bin/python3 -m pip install --upgrade pip
 RUN pip3 --no-cache-dir install --upgrade setuptools && \
     pip3 --no-cache-dir install wheel && \
     pip3 --no-cache-dir install \
-		jupyter \
-		jupyterlab \
+	jupyter \
+	jupyterlab \
         numpy \
         scipy \
         Pillow \
