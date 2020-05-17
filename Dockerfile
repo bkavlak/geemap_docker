@@ -44,15 +44,15 @@ RUN pip3 --no-cache-dir install --upgrade setuptools && \
         scikit-image \
         scikit-learn \
         sentinelhub --upgrade \
-		sentinelsat \
-		folium \
+	sentinelsat \
+	folium \
         fiona \
         shapely \
         geopandas \
         rasterio \
         tifffile \
-		branca==0.3.1 \
-		geemap
+	branca==0.3.1 \
+	geemap
 
 RUN mkdir geemap
 
