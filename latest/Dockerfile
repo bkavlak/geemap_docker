@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 ENV LANG=C.UTF-8
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Latest Check: 03/07/20
+# Latest Check: 16/07/20
 
 # install dependencies  
 RUN apt-get update --fix-missing && apt-get install -y --no-install-recommends\     
