@@ -2,8 +2,6 @@ FROM ubuntu:18.04
 ENV LANG=C.UTF-8
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Latest Check: 06/08/20
-
 # install dependencies  
 RUN apt-get update --fix-missing && apt-get install -y --no-install-recommends\     
         build-essential \
@@ -54,7 +52,7 @@ RUN pip3 --no-cache-dir install --upgrade setuptools && \
         rasterio \
         tifffile \
 	branca==0.3.1 \
-	geemap==0.7.12
+	geemap==0.7.13
 
 RUN mkdir geemap
 
