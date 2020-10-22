@@ -57,7 +57,7 @@ RUN pip3 --no-cache-dir install --upgrade setuptools && \
 RUN mkdir geemap
 RUN mkdir tests
 
-COPY /tests/geemap_test.py /tests
+COPY /tests/test_geemap.py /tests
 COPY /tests/run_tests.sh /tests
 
 WORKDIR "geemap"
