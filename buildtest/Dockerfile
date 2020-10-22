@@ -55,9 +55,10 @@ RUN pip3 --no-cache-dir install --upgrade setuptools && \
 	geemap==0.8.0
 
 RUN mkdir geemap
+RUN mkdir tests
 
 COPY /tests/geemap_test.py /
-COPY /tests/run_test.sh /
+COPY /tests/run_tests.sh /
 
 WORKDIR "geemap"
 CMD ["/bin/bash"]
