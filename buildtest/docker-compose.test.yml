@@ -1,3 +1,6 @@
-sut:
-  build: .
-  command: /tests/run_tests.sh
+version: '3.3'
+
+services:
+ sut:
+   build: .
+   command: /tests/run_tests.sh
