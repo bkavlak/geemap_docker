@@ -2,4 +2,4 @@
 
 echo "doing cool stuff"
 
-python3 /tests/geemap_test.py
+python3 /tests/test_geemap.py
