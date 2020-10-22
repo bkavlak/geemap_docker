@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 ENV LANG=C.UTF-8
 ENV DEBIAN_FRONTEND=noninteractive
 
-# install dependencies  
+# install dependencies - making some changes here to test 
 RUN apt-get update --fix-missing && apt-get install -y --no-install-recommends\     
         build-essential \
         software-properties-common \
@@ -55,6 +55,10 @@ RUN pip3 --no-cache-dir install --upgrade setuptools && \
 	geemap==0.8.0
 
 RUN mkdir geemap
+RUN mkdir tests
+
+COPY /tests/geemap_test.py /
+COPY /tests/run_tests.sh /
 
 WORKDIR "geemap"
 CMD ["/bin/bash"]
