@@ -54,11 +54,15 @@ RUN pip3 --no-cache-dir install --upgrade setuptools && \
 	branca==0.3.1 \
 	geemap==0.8.0
 
+# Making home & test folders
 RUN mkdir geemap
 RUN mkdir tests
 
+# Copying tests
 COPY /tests/test_geemap.py /tests
 COPY /tests/run_tests.sh /tests
+
+# Giving permission to tests to run
 
 WORKDIR "geemap"
 CMD ["/bin/bash"]
