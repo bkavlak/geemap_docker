@@ -4,11 +4,11 @@ import jupyter
 import jupyterlab
 import numpy
 import scipy
-import Pillow
+import PIL
 import matplotlib
-import opencv-contrib-python
-import scikit-image
-import scikit-learn
+import cv2
+import skimage
+import sklearn
 import sentinelhub
 import sentinelsat
 import folium

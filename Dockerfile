@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 ENV LANG=C.UTF-8
 ENV DEBIAN_FRONTEND=noninteractive
 
-# install dependencies    
+# install dependencies - making some changes here to test 
 RUN apt-get update --fix-missing && apt-get install -y --no-install-recommends\     
         build-essential \
         software-properties-common \
@@ -15,6 +15,7 @@ RUN apt-get update --fix-missing && apt-get install -y --no-install-recommends\
         libpng-dev \
         libzmq3-dev \
         libspatialindex-dev \
+	libgl1-mesa-glx \
         gdal-bin \
         libgdal-dev \
         python3-gdal \
@@ -54,7 +55,17 @@ RUN pip3 --no-cache-dir install --upgrade setuptools && \
 	branca==0.3.1 \
 	geemap==0.8.0
 
+# Making home & test folders
 RUN mkdir geemap
+RUN mkdir tests
+
+# Copying tests
+COPY /tests/test_geemap.py /tests
+COPY /tests/run_tests.sh /tests
+
+# Giving permission to tests to run
+RUN chmod +x /tests/test_geemap.py
+RUN chmod +x /tests/run_tests.sh
 
 WORKDIR "geemap"
 CMD ["/bin/bash"]
