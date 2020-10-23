@@ -4,7 +4,7 @@ import jupyter
 import jupyterlab
 import numpy
 import scipy
-import Pillow
+import PIL
 import matplotlib
 import cv2
 import skimage
