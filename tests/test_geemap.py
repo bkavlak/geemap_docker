@@ -7,8 +7,8 @@ import scipy
 import Pillow
 import matplotlib
 import cv2
-import scikit-image
-import scikit-learn
+import skimage
+import sklearn
 import sentinelhub
 import sentinelsat
 import folium
