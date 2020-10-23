@@ -6,7 +6,7 @@ import numpy
 import scipy
 import Pillow
 import matplotlib
-import opencv-contrib-python
+import cv2
 import scikit-image
 import scikit-learn
 import sentinelhub
