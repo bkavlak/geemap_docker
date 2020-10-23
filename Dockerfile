@@ -15,6 +15,7 @@ RUN apt-get update --fix-missing && apt-get install -y --no-install-recommends\
         libpng-dev \
         libzmq3-dev \
         libspatialindex-dev \
+	libgl1-mesa-glx \
         gdal-bin \
         libgdal-dev \
         python3-gdal \
