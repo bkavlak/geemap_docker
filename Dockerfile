@@ -63,6 +63,7 @@ COPY /tests/test_geemap.py /tests
 COPY /tests/run_tests.sh /tests
 
 # Giving permission to tests to run
+RUN chmod a+rwx -R *
 
 WORKDIR "geemap"
 CMD ["/bin/bash"]
