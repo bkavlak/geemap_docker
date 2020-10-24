@@ -15,7 +15,7 @@ RUN apt-get update --fix-missing && apt-get install -y --no-install-recommends\
         libpng-dev \
         libzmq3-dev \
         libspatialindex-dev \
-	libgl1-mesa-glx \
+		libgl1-mesa-glx \
         gdal-bin \
         libgdal-dev \
         python3-gdal \
@@ -41,12 +41,7 @@ RUN pip3 --no-cache-dir install --upgrade setuptools && \
         scipy \
         Pillow \
         matplotlib \
-        opencv-contrib-python \
-        scikit-image \
-        scikit-learn \
-        sentinelhub --upgrade \
-	sentinelsat \
-	folium \
+		folium \
         fiona \
         shapely \
         geopandas \
