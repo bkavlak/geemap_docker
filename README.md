@@ -32,7 +32,7 @@ I highly recommend this tutorial that explains almost everything you need and ev
 
 * You need successfully install Docker and run a container as the tutorial explains.
 * If you operate on Windows, you need to enable Hyper-V since this is an Ubuntu container. Check here: [Ubuntu Container on Windows](https://ubuntu.com/tutorials/tutorial-windows-ubuntu-hyperv-containers#1-overview)
-* You can now also use with WSL 2 on Windows. Check here: [Docker for WSL 2](https://docs.docker.com/docker-for-windows/wsl/)
+* You can now also use WSL 2 on Windows. Check here: [Docker for WSL 2](https://docs.docker.com/docker-for-windows/wsl/)
 
 
 ## Installation
