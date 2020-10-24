@@ -2,6 +2,8 @@
 
 This is an Ubuntu Image that includes the geemap package and more that are used in GIS applications. You can find the full package list below:
 
+*light tag:*
+
 ```
 jupyter
 jupyterlab
@@ -9,11 +11,6 @@ numpy
 scipy
 Pillow
 matplotlib
-opencv-contrib-python
-scikit-image
-scikit-learn
-sentinelhub
-sentinelsat
 folium
 fiona
 shapely
@@ -21,6 +18,16 @@ geopandas
 rasterio
 tifffile
 geemap
+```
+
+*other tags:*
+
+```
+opencv-contrib-python
+scikit-image
+scikit-learn
+sentinelhub
+sentinelsat
 ```
 ## Tutorial
 
