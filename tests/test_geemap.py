@@ -6,11 +6,6 @@ import numpy
 import scipy
 import PIL
 import matplotlib
-import cv2
-import skimage
-import sklearn
-import sentinelhub
-import sentinelsat
 import folium
 import fiona
 import shapely
