@@ -24,7 +24,7 @@ geemap
 ```
 ## Tutorial
 
-I highly recommend this tutorial that explains almost everything you need and even more:
+I highly recommend this tutorial that explains almost everything you need and even more. Please give an hour to understand how Docker works. You'll save a lot of time later:
 
 [KodeKloud FreeCodeCamp Docker Beginner Tutorial](https://www.youtube.com/watch?v=fqMOX6JJhGo&t=4516s)
 
