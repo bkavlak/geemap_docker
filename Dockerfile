@@ -37,24 +37,30 @@ RUN pip3 --no-cache-dir install --upgrade setuptools && \
     pip3 --no-cache-dir install \
 	jupyter \
 	jupyterlab \
-        numpy \
-        scipy \
-        Pillow \
-        matplotlib \
-        opencv-contrib-python \
-        scikit-image \
-        scikit-learn \
-        sentinelhub --upgrade \
+    numpy --upgrade \
+    scipy \
+    Pillow \
+    matplotlib \
+    opencv-contrib-python \
+    scikit-image \
+    scikit-learn \
+    sentinelhub --upgrade \
 	sentinelsat \
 	folium \
-        fiona \
-        shapely \
-        geopandas \
-        rasterio \
-        tifffile \
+    fiona \
+    shapely \
+    geopandas \
+    rasterio \
+    tifffile \
 	branca==0.3.1 \
 	geemap==0.8.0
 
+# Add additional packages
+RUN pip3 --no-cache-dir install \
+	pandas --upgrade \
+	whitebox --upgrade \
+	xarray --upgrade
+	
 # Making home & test folders
 RUN mkdir geemap
 RUN mkdir tests
