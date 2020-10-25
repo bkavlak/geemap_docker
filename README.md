@@ -8,6 +8,7 @@ This is an Ubuntu Image that includes the geemap package and more that are used 
 jupyter
 jupyterlab
 numpy
+pandas
 scipy
 Pillow
 matplotlib
@@ -28,6 +29,8 @@ scikit-image
 scikit-learn
 sentinelhub
 sentinelsat
+xarray
+whitebox
 ```
 ## Tutorial
 
