@@ -37,7 +37,8 @@ RUN pip3 --no-cache-dir install --upgrade setuptools && \
     pip3 --no-cache-dir install \
 	jupyter \
 	jupyterlab \
-        numpy==1.19.2 \
+        numpy --upgrade \
+		pandas --upgrade \
         scipy \
         Pillow \
         matplotlib \
