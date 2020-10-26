@@ -21,7 +21,7 @@ tifffile
 geemap
 ```
 
-*other tags:*
+*latest tag: (+)*
 
 ```
 opencv-contrib-python
