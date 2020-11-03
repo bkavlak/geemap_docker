@@ -2,18 +2,16 @@
 
 This is an Ubuntu Image that includes the geemap package and more that are used in GIS applications. You can find the full package list below:
 
+*light tag:*
+
 ```
 jupyter
 jupyterlab
 numpy
+pandas
 scipy
 Pillow
 matplotlib
-opencv-contrib-python
-scikit-image
-scikit-learn
-sentinelhub
-sentinelsat
 folium
 fiona
 shapely
@@ -22,9 +20,21 @@ rasterio
 tifffile
 geemap
 ```
+
+*latest tag: (+)*
+
+```
+opencv-contrib-python
+scikit-image
+scikit-learn
+sentinelhub
+sentinelsat
+xarray
+whitebox
+```
 ## Tutorial
 
-I highly recommend this tutorial that explains almost everything you need and even more:
+I highly recommend this tutorial that explains almost everything you need and even more. Please give an hour to understand how Docker works. You'll save a lot of time later:
 
 [KodeKloud FreeCodeCamp Docker Beginner Tutorial](https://www.youtube.com/watch?v=fqMOX6JJhGo&t=4516s)
 
@@ -32,6 +42,7 @@ I highly recommend this tutorial that explains almost everything you need and ev
 
 * You need successfully install Docker and run a container as the tutorial explains.
 * If you operate on Windows, you need to enable Hyper-V since this is an Ubuntu container. Check here: [Ubuntu Container on Windows](https://ubuntu.com/tutorials/tutorial-windows-ubuntu-hyperv-containers#1-overview)
+* You can now also use WSL 2 on Windows. Check here: [Docker for WSL 2](https://docs.docker.com/docker-for-windows/wsl/)
 
 
 ## Installation
