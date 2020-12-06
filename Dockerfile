@@ -15,7 +15,7 @@ RUN apt-get update --fix-missing && apt-get install -y --no-install-recommends\
         libpng-dev \
         libzmq3-dev \
         libspatialindex-dev \
-		libgl1-mesa-glx \
+	libgl1-mesa-glx \
         gdal-bin \
         libgdal-dev \
         python3-gdal \
@@ -38,18 +38,18 @@ RUN pip3 --no-cache-dir install --upgrade setuptools && \
 	jupyter \
 	jupyterlab \
         numpy --upgrade \
-		pandas --upgrade \
+	pandas --upgrade \
         scipy \
         Pillow \
         matplotlib \
-		folium \
+	folium \
         fiona \
         shapely \
         geopandas \
         rasterio \
         tifffile \
 	branca==0.3.1 \
-	geemap==0.8.3
+	geemap==0.8.4
 
 # Making home & test folders
 RUN mkdir geemap
