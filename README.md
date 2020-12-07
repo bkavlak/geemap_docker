@@ -80,7 +80,7 @@ To start a Jupyter Notebook:
 If successful, you will see some links below.
 
 ```
-http://127.0.0.1:888/?token......
+http://127.0.0.1:8888/?token......
 ```
 
 Copy the last link to a browser (like Chrome). Hit ENTER.
