@@ -49,7 +49,7 @@ RUN pip3 --no-cache-dir install --upgrade setuptools && \
         rasterio \
         tifffile \
 	branca==0.3.1 \
-	geemap==0.8.10
+	geemap==0.8.11
 
 # Making home & test folders
 RUN mkdir geemap
