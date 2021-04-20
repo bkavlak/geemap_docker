@@ -19,7 +19,6 @@ import rasterio
 import tifffile
 import geemap
 import pandas
-import whitebox
 import xarray
 
 print("Well done!")
