@@ -58,7 +58,7 @@ RUN pip3 --no-cache-dir install --upgrade setuptools && \
 # Add additional packages
 RUN pip3 --no-cache-dir install \
 	pandas --upgrade \
-	whitebox --upgrade \
+	whitebox -U \
 	xarray --upgrade
 	
 # Making home & test folders
