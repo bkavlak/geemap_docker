@@ -13,6 +13,7 @@ import geopandas
 import rasterio
 import tifffile
 import geemap
+import ee
 
 ee.initialize()
 
