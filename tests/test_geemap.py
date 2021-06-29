@@ -14,4 +14,6 @@ import rasterio
 import tifffile
 import geemap
 
+ee.initialize()
+
 print("Well done!")
