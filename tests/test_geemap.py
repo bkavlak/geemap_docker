@@ -21,4 +21,6 @@ import geemap
 import pandas
 import xarray
 
+ee.initialize()
+
 print("Well done!")
