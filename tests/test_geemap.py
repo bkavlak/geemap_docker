@@ -18,6 +18,7 @@ import geopandas
 import rasterio
 import tifffile
 import geemap
+import ee
 import pandas
 import xarray
 
