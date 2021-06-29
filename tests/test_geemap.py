@@ -22,6 +22,6 @@ import ee
 import pandas
 import xarray
 
-ee.Initialize()
+ee.Authenticate()
 
 print("Well done!")
