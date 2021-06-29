@@ -15,6 +15,6 @@ import tifffile
 import geemap
 import ee
 
-ee.initialize()
+ee.Initialize()
 
 print("Well done!")
