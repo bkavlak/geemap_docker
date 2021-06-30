@@ -15,6 +15,4 @@ import tifffile
 import geemap
 import ee
 
-ee.Authenticate()
-
 print("Well done!")
