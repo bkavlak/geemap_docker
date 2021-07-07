@@ -75,4 +75,3 @@ RUN chmod +x /tests/test_geemap.py
 RUN chmod +x /tests/run_tests.sh
 
 WORKDIR "geemap"
-CMD ["/bin/bash"]
