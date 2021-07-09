@@ -49,7 +49,7 @@ RUN pip3 --no-cache-dir install --upgrade setuptools && \
         rasterio \
         tifffile \
 	branca==0.3.1 \
-	geemap==0.8.17 \
+	geemap==0.8.18 \
 	google-api-python-client==1.12.8
 
 # Making home & test folders
