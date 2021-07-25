@@ -2,56 +2,23 @@ FROM ubuntu:18.04
 ENV LANG=C.UTF-8
 ENV DEBIAN_FRONTEND=noninteractive
 
+# Copying install_dependencies.sh & give permissions
+COPY install_dependencies.sh /
+RUN chmod +x /install_dependencies.sh
+
 # install dependencies - making some changes here to test 
-RUN apt-get update --fix-missing && apt-get install -y --no-install-recommends\     
-        build-essential \
-        software-properties-common \
-        python3.8 \
-        python3-dev \
-        python3-tk \
-        python3-pip \
-        build-essential \
-        libfreetype6-dev \
-        libpng-dev \
-        libzmq3-dev \
-        libspatialindex-dev \
-	libgl1-mesa-glx \
-        gdal-bin \
-        libgdal-dev \
-        python3-gdal \
-        libsm6 \
-        vim \
-        wget \
-        zip \
-        && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+RUN ./install_dependencies.sh
 
 RUN apt-get update
 
 RUN /usr/bin/python3 -m pip install --upgrade pip
 
 # install python package
+COPY requirements.txt /
 RUN pip3 --no-cache-dir install --upgrade setuptools && \
     pip3 --no-cache-dir install wheel && \
-    pip3 --no-cache-dir install \
-	jupyter \
-	jupyterlab \
-        numpy --upgrade \
-	pandas --upgrade \
-        scipy \
-        Pillow \
-        matplotlib \
-	folium \
-        fiona \
-        shapely \
-        geopandas \
-        rasterio \
-        tifffile \
-	branca==0.3.1 \
-	geemap==0.8.18 \
-	google-api-python-client==1.12.8
-
+    pip3 --no-cache-dir install -r requirements.txt
+	
 # Making home & test folders
 RUN mkdir geemap
 RUN mkdir tests
