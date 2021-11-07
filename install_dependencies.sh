@@ -2,7 +2,7 @@
 
 echo "
 
-This script is for installing dependencies for up42-challenge
+This script is for installing dependencies for geemap docker
 
 "
 
