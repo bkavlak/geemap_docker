@@ -87,6 +87,16 @@ Copy the last link to a browser (like Chrome). Hit ENTER.
 
 See that you have a file ```data```, which is the bridge between the container and local machine. You can move your data or files that you work on to the ```VOLUME DIRECTORY``` and see them on ```data``` in ```Jupyter```.
 
+If you have problems, it may connect to the Jupyter on your local. In this case try:
+
+```jupyter notebook --ip=0.0.0.0 --port=6006 --allow-root```
+
+If successful, you will see some links below.
+
+```
+http://127.0.0.1:6006/?token......
+```
+
 ## Finish
 
 After you are done with the analyses, you can click  ```COMMAND + C``` on bash to stop ```Jupyter``` and  ``` COMMAND + D``` to stop the container.
