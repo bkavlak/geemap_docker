@@ -8,7 +8,7 @@ RUN chmod +x /install_dependencies.sh
 
 # install dependencies - making some changes here to test 
 RUN ./install_dependencies.sh && \
-    apt-get update \
+    apt-get update && \
     /usr/bin/python3 -m pip install --upgrade pip
 
 # install python package
