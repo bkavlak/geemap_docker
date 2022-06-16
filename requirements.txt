@@ -11,5 +11,5 @@ geopandas
 rasterio
 tifffile
 branca==0.3.1
-geemap==0.13.10
+geemap==0.13.11
 google-api-python-client==1.12.8
