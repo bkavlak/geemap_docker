@@ -1,6 +1,6 @@
 # geemap_docker
 
-This is an Ubuntu Image that includes the geemap package and more that are used in GIS applications. You can find the full package list below:
+This is an Ubuntu Image that includes the geemap package and more that are used in GIS applications. Mostly designed for research purposes. You can find the full package list below:
 
 *light tag:*
 
