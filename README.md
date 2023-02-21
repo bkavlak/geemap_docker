@@ -1,6 +1,8 @@
 # geemap_docker
 
-This is an Ubuntu Image that includes the geemap package and more that are used in GIS applications. You can find the full package list below:
+This is an Ubuntu Image that includes the geemap package and more that are used in GIS applications. Mostly designed for research purposes. You can find the full package list below:
+
+*light tag:*
 
 *light tag:*
 
@@ -80,7 +82,7 @@ To start a Jupyter Notebook:
 If successful, you will see some links below.
 
 ```
-http://127.0.0.1:888/?token......
+http://127.0.0.1:8888/?token......
 ```
 
 Copy the last link to a browser (like Chrome). Hit ENTER.

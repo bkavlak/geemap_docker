@@ -11,12 +11,19 @@ RUN ./install_dependencies.sh && \
     apt-get update && \
     /usr/bin/python3 -m pip install --upgrade pip
 
-# install python package
-COPY requirements.txt /
+# Install the Python requirements.
 RUN pip3 --no-cache-dir install --upgrade setuptools && \
-    pip3 --no-cache-dir install wheel && \
-    pip3 --no-cache-dir install -r requirements.txt
-	
+    pip3 --no-cache-dir install wheel
+
+COPY poetry.lock /
+COPY pyproject.toml /
+
+RUN pip install --upgrade pip \
+    && pip install poetry \
+    && poetry config virtualenvs.create false \
+    && poetry install --no-dev \
+    && pip cache purge
+
 # Making home & test folders
 RUN mkdir geemap && \
     mkdir tests
@@ -29,4 +36,4 @@ COPY /tests/run_tests.sh /tests
 RUN chmod +x /tests/test_geemap.py && \
     chmod +x /tests/run_tests.sh
 
-WORKDIR "geemap"
+WORKDIR /geemap
